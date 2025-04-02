@@ -2,6 +2,7 @@ import express, { Application } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import swaggerUi from 'swagger-ui-express';
+import { sebiListRouter } from './api/routes/sebi-list.routes';
 import { appConfig } from './config/app.config';
 import 'source-map-support/register';
 
@@ -23,7 +24,8 @@ export class App {
   }
 
   private initializeRoutes(): void {
-
+    // Routes
+    app.use('/api/sebi-list', sebiListRouter);
   }
 
   private initializeSwagger(): void {
