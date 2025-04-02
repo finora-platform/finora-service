@@ -1,0 +1,57 @@
+finora-service/
+├── api/
+│   ├── middlewares/
+│   │   ├── auth.middleware.ts
+│   │   ├── error.middleware.ts
+│   │   ├── rateLimit.middleware.ts
+│   │   ├── santization.middleware.ts
+│   │   └── validation.middleare.ts
+│   ├── routes/
+│   │   ├── ai.routes.ts
+│   │   ├── analytics.routes.ts
+│   │   ├── notification.routes.ts
+│   │   ├── sales.routes.ts
+│   │   ├── trade.routes.ts
+│   │   └── user.routes.ts
+│   └── schema/
+│       └── core_schema.txt
+├── config/
+│   ├── app.config.ts
+│   ├── auth.config.ts
+│   ├── cache.config.ts
+│   ├── llm.config.ts
+│   ├── logger.config.ts
+│   └── queue.config.ts
+├── domain/
+│   ├── sales/
+│   │   ├── lead.entity.ts
+│   │   └── lead.repository.ts
+│   ├── trade/
+│   │   ├── trade.entity.ts
+│   │   ├── trade.repository.ts
+│   │   └── trade.types.ts
+│   └── user/
+│       ├── user.entity.ts
+│       ├── user.repository.ts
+│       └── user.types.ts
+├── infrastructure/
+│   └── cache/
+│       ├── cache.manager.ts
+│       ├── cache.types.ts
+│       └── cache.utils.ts
+├── services/
+│   ├── ai/
+│   │   ├── ai.service.ts
+│   │   ├── ai.types.ts
+│   │   ├── ai.utils.ts
+│   │   └── prompt.service.ts
+│   ├── sales/
+│   │   └── lead.service.ts
+│   └── trade/
+│       ├── trade.service.ts
+│       ├── trade.types.ts
+│       └── trade.utils.ts
+├── app.ts
+├── constants.ts
+├── package.json
+└── tsconfig.json
